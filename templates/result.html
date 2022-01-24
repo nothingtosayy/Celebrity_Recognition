@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="../static/result.css"
+    </head>
+
+    <body>
+        <header class="main-header">
+            <ul>
+                <li><h3>Celebrity Name Prediction Results</h3></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </header>
+
+        <section class="container">
+            <div class="main-result">
+                {% if res is None %}
+                    <h3>Can't Predict the celebrity due to lack of clarity in detecting face and eyes of celebrity.</h3>
+                {% endif %}
+
+                {% if res is not None %}
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Celebrity Name</th>
+                                <th>Probability</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for name, probability in res.items %}
+                                <tr>
+                                    <td>{{ name }}</td>
+                                    <td>{{ probability }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+
+            </div>
+        </section>
+    </body>
+</html>

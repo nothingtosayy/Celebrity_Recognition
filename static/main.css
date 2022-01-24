@@ -1,0 +1,83 @@
+h3{
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.main-form{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.info{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: larger;
+    font-weight: bold;
+    color: darkslategrey;
+    text-align: center;
+    text-transform: capitalize;
+    /*background-color: #353535;*/
+    padding: 15px;
+}
+
+.form-input input[type='file']{
+    background-color: wheat;
+    color: blueviolet;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 15px;
+
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 3px;
+
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 3px;
+
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width: 3px;
+
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+
+    padding: 10px;
+
+    margin: 20px;
+}
+
+.button{
+    font-family: 'Calibri';
+    font-size: large;
+    background-color: black;
+    color: ghostwhite;
+    padding: 5px;
+    border: 30px;
+    margin: 10px;
+    width: 70px;
+}
+
+.button:hover{
+    background-color: darkred;
+    color: white;
+}
+
+
+#main-footer p{
+    font-family: "Times New Roman";
+    font-size: medium;
+    font-style: normal;
+    text-align: center;
+;
+}

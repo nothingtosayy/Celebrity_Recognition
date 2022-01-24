@@ -1,0 +1,80 @@
+.main-header ul{
+    list-style: none;
+}
+
+.main-header li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+    font-size: larger;
+    padding: 5px;
+    margin: auto;
+}
+
+.main-header li a:hover{
+    background-color: red;
+    color: white;
+}
+
+.main-header ul li h3{
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+    font-weight: bolder;
+    font-family: Calibri;
+    font-size: x-large;
+}
+
+.main-body{
+    align-content: center;
+}
+.container{
+    margin: auto;
+    width: 50%;
+}
+
+.main-result h3{
+    font-family: "Times New Roman";
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+
+    background-color: #00363a;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+.content-table thead tr{
+    background-color: lightgreen;
+    color: black;
+    text-align: left;
+}
+
+.content-table{
+    font-family: Calibri;
+    font-size: larger;
+    font-weight: normal;
+}
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 3px black solid;
+    background-color: #e8e8e8;
+}

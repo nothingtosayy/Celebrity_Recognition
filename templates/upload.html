@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" >
+    </head>
+    <body>
+       <header>
+           <h3>Celebrity Recognition</h3>
+       </header>
+
+       <section>
+
+            <div class="main-form">
+                <form action="result/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="info">
+                        <p>Upload the Image of Celebrity.
+                            This Website will classify and Predict the name of your celebrity with utmost Probability</p>
+                    </div>
+
+                    <div class="form-input">
+                        <input type="file" name="imgfile">
+                    </div>
+                    <input class="button" type="submit" value="Predict">
+                </form>
+            </div>
+
+       </section>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; <strong>Celebrity Recognition</strong>, Jan 2022</p>
+    </footer>
+
+    </body>
+</html>
